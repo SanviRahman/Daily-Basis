@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>weather</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<style>
+        body {
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+	<div class="hei">
+		<div style="display:inline" class="">
+			<div class="hero">
+
+				<div class="navs  " style="background-color:#3a017a" style="position:fixed" style="width: 100%"
+					style="margin-right: 10px;">
+					<img src="../authentication/images/Daily-Basis.png" class="logo">
+					<ul class="mt-3">
+						<li><a href="../Home/index.html" style="color:#ffffff">Home</a></li>
+						<li><a href="../Weather/index.html" style="color:#ffffff">Weather</a></li>
+						<li><a href="../NoteBook/index.html" style="color:#ffffff">NoteBook</a></li>
+						<li><a href="../Daily-Quotes/quotes.html" style="color:#ffffff">Daily-Quotes</a></li>
+						<li><a href="../Bmi/bmi.html" style="color:#ffffff">BMI</a></li>
+					</ul>
+
+				</div>
+
+			</div>
+		</div>
+ 
+
+		<div class="container">
+			<form class="col-md-6 m-auto py-5 ">
+				<div class="input-group mb-3 mt-5">
+					<input type="text" id="search-field" class="form-control"
+						placeholder="Enter a location for Weather ...">
+					<div class="input-group-append">
+						<button id="btn-search" type="button" class="btn btn-danger">Search</button>
+					</div>
+				</div>
+			</form>
+			<div class="weather-status text-white text-center">
+				<img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+				<h1 id="city">Dhaka</h1>
+				<h3><span id="temperature">38.06</span>&deg;C</h3>
+				<h1 id="condition" class="lead">Clouds</h1>
+			</div>
+		</div>
+		
+
+
+	</div>
+	<div class="Footer">
+		<p align="center"><br>This site is beta version<br>Daily-Basis reserves the right to change any of the
+			information at any given time<br>All rights reserved © Daily-Basis 2023 </p>
+	</div>
+	<script src="index.js"></script>
+</body>
+
+</html>
